@@ -1,9 +1,12 @@
 import './App.css';
+import Top from './components/TopComponent.js';
 
 function App() {
   return (
-    <div className="App">
-      <h1>GST - Guia de substituição de transistores</h1>
+    
+    <div className="App">     
+      <Top/>
+     
 
     </div>
   );
