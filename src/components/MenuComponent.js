@@ -12,7 +12,7 @@ const MenuComponent = () => {
             <h2>MENU</h2>
             <div>
                 <Button color="primary">primary</Button>
-                {teste}
+                {''}
                 <Button color="success">success</Button>
                 {' '}
                 <Button color="primary">primary</Button>

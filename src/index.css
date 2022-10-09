@@ -1,32 +1,38 @@
-.Container {
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
     display: grid;
-    grid-template-columns: 3fr 3fr;
-    grid-template-rows: 20vh 30vh 10vh;
-    grid-template-areas: "Topo"
-        "menu"
-        "TR-01 TR-02";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 10vh 90vh 20vh;
+    grid-template-areas: "Topo Topo"  "mn dataT"  "Ft Ft";
 }
 
 .TopComponent {
     background-color: yellow;
-    height: 100px;
+    /*height: 100px;*/
     grid-area: Topo;
 }
 
 .Menu {
     background-color: aqua;
-    height: 100px;
-    grid-area: menu;
+   /* height: 100px;*/
+    grid-area: mn;
 }
 
-.TR-01 Form {
-    background-color: blueviolet;
-    padding: 10px;
-    grid-area: TR-01, TR-02;
-}
+.dataTransistor{
 
-.TR-02 Form {
-    background-color: rgb(61, 59, 184);
-    padding: 10px;
-    grid-area: TR-02;
+    background-color: red ;
+    /*height: 100%;*/
+    grid-area: dataT;
+}
+.Footer{
+
+    background-color: black ;
+    /*height: 100px;*/
+    grid-area: ft;
+    color: white;
 }
