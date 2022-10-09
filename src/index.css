@@ -1,0 +1,32 @@
+.Container {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 20vh 30vh 10vh;
+    grid-template-areas: "Topo"
+        "menu"
+        "TR-01 TR-02";
+}
+
+.TopComponent {
+    background-color: yellow;
+    height: 100px;
+    grid-area: Topo;
+}
+
+.Menu {
+    background-color: aqua;
+    height: 100px;
+    grid-area: menu;
+}
+
+.TR-01 Form {
+    background-color: blueviolet;
+    padding: 10px;
+    grid-area: TR-01, TR-02;
+}
+
+.TR-02 Form {
+    background-color: rgb(61, 59, 184);
+    padding: 10px;
+    grid-area: TR-02;
+}

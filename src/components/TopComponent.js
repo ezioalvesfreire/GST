@@ -4,7 +4,10 @@ import './TopComponent.css';
 function TopComponent() {
   return (
     <div className="TopComponent">
-      <h1>GST - Guia de substituição de transistores</h1>
+      <div className="Logo">
+        <h1>GST</h1>
+      </div>
+      <h1>Guia de substituição de transistores</h1>
 
     </div>
   );

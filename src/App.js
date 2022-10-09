@@ -1,11 +1,16 @@
 import './App.css';
-import Top from './components/TopComponent.js';
+import DataComponet from './components/DataComponent';
+import TopComponent from './components/TopComponent.js';
+import MenuComponent from './components/MenuComponent.js';
 
 function App() {
   return (
     
     <div className="App">     
-      <Top/>
+      <TopComponent/>
+      <MenuComponent/>
+      <DataComponet/>
+     
      
 
     </div>
