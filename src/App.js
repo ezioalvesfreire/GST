@@ -8,10 +8,10 @@ import FooterComponet from './components/FooterComponent';
 function App() {
   return (
     <div className="App">
-        <TopComponent />
-        <MenuComponent />
-        <DataComponent />
-        <FooterComponet />
+      <TopComponent />
+      <MenuComponent />
+      <DataComponent />
+      <FooterComponet />
     </div>
   );
 }

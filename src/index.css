@@ -2,6 +2,7 @@ body, html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 .App {
@@ -9,12 +10,13 @@ body, html{
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 10vh 90vh 20vh;
     grid-template-areas: "Topo Topo"  "mn dataT"  "Ft Ft";
+   
 }
 
 .TopComponent {
     background-color: yellow;
-    /*height: 100px;*/
     grid-area: Topo;
+    width: 100%;
 }
 
 .Menu {
@@ -35,4 +37,6 @@ body, html{
     /*height: 100px;*/
     grid-area: ft;
     color: white;
+    
+ 
 }
