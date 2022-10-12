@@ -1,7 +1,7 @@
 body, html{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
     
 }
 
@@ -13,18 +13,18 @@ body, html{
 }
 
 .TopComponent {
-    background-color: yellow;
+    background-color: rgb(189, 189, 188);
     grid-area: Topo;
     width: 100%;
 }
 
 .Menu {
-    background-color: aqua;  
+    background-color: rgb(189, 189, 188);
     grid-area: mn;
 }
 
 .dataTransistor{
-    background-color: red ;
+    background-color:rgb(189, 189, 188);
     grid-area: dataT;
 }
 .Footer{

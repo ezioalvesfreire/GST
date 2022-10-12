@@ -1,3 +1,24 @@
+:root {
+    --primary2:#9b1536;
+    --primary: #fff;
+}
+
 body{
     background-color: rgb(218, 212, 212);
+}
+
+.bg-primary {
+
+    background-color: var(--primary) !important;
+}
+
+.bg-primary2 {
+
+    background-color: var(--primary2) !important;
+}
+.box-sidebar{
+
+    max-height: 500px;
+    over-flow-y:auto;
+
 }

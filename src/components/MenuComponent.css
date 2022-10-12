@@ -5,3 +5,8 @@
     width: 100%;
     margin: 3px;
 }
+.TR-01, .TR-02{
+    box-shadow: 0 0 11px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    padding:10px ;
+}

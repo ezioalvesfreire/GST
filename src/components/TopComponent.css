@@ -11,9 +11,7 @@
 .TopComponent{
     display:grid;
     grid-template-columns: 1fr 8fr;
-    grid-template-rows: 9vh 90vh 20vh;
-    
-    
+    grid-template-rows: 9vh 90vh 20vh;    
 
 }
 
