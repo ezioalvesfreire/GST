@@ -8,9 +8,8 @@ body, html{
 .App {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 10vh 90vh 20vh;
-    grid-template-areas: "Topo Topo"  "mn dataT"  "Ft Ft";
-   
+    grid-template-rows: 10vh 80vh 30vh;
+    grid-template-areas: "Topo Topo"  "mn dataT"  "Ft Ft";   
 }
 
 .TopComponent {
@@ -20,23 +19,16 @@ body, html{
 }
 
 .Menu {
-    background-color: aqua;
-   /* height: 100px;*/
+    background-color: aqua;  
     grid-area: mn;
 }
 
 .dataTransistor{
-
     background-color: red ;
-    /*height: 100%;*/
     grid-area: dataT;
 }
 .Footer{
-
-    background-color: black ;
-    /*height: 100px;*/
-    grid-area: ft;
-    color: white;
-    
- 
-}
+    background-color: black ;   
+    grid-area: Ft;
+    color: white;   
+ }
