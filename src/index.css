@@ -1,34 +1,93 @@
 body, html{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;    
-    
-}
-
-.App {
+    box-sizing: border-box;   
+    background: rgb(189, 189, 188) !important;
+ }
+  
+ .App {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 10vh 80vh 30vh;
-    grid-template-areas: "Topo Topo"  "mn dataT"  "Ft Ft";   
-}
-
-.TopComponent {
+    grid-template-areas: "Topo Topo"  "mn dataT"  "Ft Ft";
+ }
+  
+ .TopComponent {
     background-color: rgb(189, 189, 188);
     grid-area: Topo;
     width: 100%;
-}
-
-.Menu {
+ }
+  
+ .Menu {
     background-color: rgb(189, 189, 188);
     grid-area: mn;
-}
-
-.dataTransistor{
+ }
+  
+ .dataTransistor{
     background-color:rgb(189, 189, 188);
     grid-area: dataT;
-}
-.Footer{
-    background-color: black ;   
-    grid-area: Ft;
-    color: white;   
+    overflow-y: auto;
  }
+ .Footer{
+    background-color: black ;  
+    grid-area: Ft;
+    color: white;  
+ }
+  
+ @media (max-width: 1132px) {
+    .frmComparator{
+        grid-template-columns: 1fr !important;
+    }
+  }
+  
+  @media (max-width: 900px) {
+  
+    .App {
+        grid-template-areas: "Topo Topo"  "dataT dataT"  "Ft Ft";
+    }
+    .Menu{
+        display: none;
+    }
+  }
+  
+ @media (max-width: 800px) {
+    .TopComponent h1.title{
+       font-size: 1.5rem !important;
+       margin: 38px 25px !important;
+    }
+  }
+  
+  @media (max-width: 615px) {
+    .TopComponent h1.title{
+        font-size: 1.5rem !important;
+       margin: 23px 25px !important;
+    }
+  }
+  
+ 
+ 
+ 
+ 
+ TopComponent.css
+ .Logo h1{
+    background-color: blue;
+    font-size: 2rem;
+    font-style: normal;
+    color: white;
+    border-radius: 15px 15px 15px 0;
+    margin: 12px 4px 5px 12px;
+    padding: 24px 30px;
+    text-align: center;
+ }
+ .TopComponent{
+    display:grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 9vh 90vh 20vh;   
+  
+ }
+  
+ .TopComponent h1.title{
+    font-size: 2rem; 
+    margin: 32px 25px;
+ }
+ 
