@@ -1,7 +1,9 @@
 import React from "react";
 import './DataComponent.css';
 import FormTrComponent from "./FormTrComponent";
+import SearchEqual from "../pages/SearchEqual";
 import { Container, Form, Input } from "reactstrap";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 const DataDoComponet = () => {
@@ -9,6 +11,13 @@ const DataDoComponet = () => {
     return (
 
         <Container className="dataTransistor mt-5 ">
+          
+                <Routes>
+                    <Route path="/SearchEqual" element={<SearchEqual />} />
+                </Routes>
+         
+
+
             <Form>
                 <div class="col-5 ">
                     <Input className="mb-4" type="select">

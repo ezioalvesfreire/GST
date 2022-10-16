@@ -33,7 +33,7 @@ body, html{
     grid-area: Ft;
     color: white;  
  }
-  
+
  @media (max-width: 1132px) {
     .frmComparator{
         grid-template-columns: 1fr !important;
