@@ -17,7 +17,7 @@ const MenuComponent = () => {
             <h2>MENU</h2>
             <div className="d-grid gap-1.5 col-9 mx-auto">
                 <Link to="/SearchEqual" className="btn btn-success " onclick="myFunction()">Nova busca</Link>
-                <Link to="/SearchEqual" className="btn btn-primary ">Comparar</Link>
+                <Link to="/DataComponent" className="btn btn-primary ">Comparar</Link>
                 <Link to="/SearchEqual" className="btn btn-primary">Buscar Equiv.</Link>
             </div>
 
