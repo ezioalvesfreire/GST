@@ -21,8 +21,8 @@ const MenuComponent = () => {
                 <Link to="/SearchEqual" className="btn btn-primary">Buscar Equiv.</Link>
             </div>
 
-            <div className="Opt Teste bg-primary">dfkgmdgçjdfg</div>
-            <button className="Opt bg-primary2" type="button">bla-bla-bla</button>
+            {/*<div className="Opt Teste bg-primary">dfkgmdgçjdfg</div>
+            <button className="Opt bg-primary2" type="button">bla-bla-bla</button>*/}
 
         </Container>
     );
