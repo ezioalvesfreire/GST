@@ -3,8 +3,10 @@ import DataComponent from './components/DataComponent';
 import TopComponent from './components/TopComponent.js';
 import MenuComponent from './components/MenuComponent.js';
 import FooterComponet from './components/FooterComponent';
-import { BrowserRouter } from 'react-router-dom';
 
+import SearchEqual from "./pages/SearchEqual";
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -12,7 +14,11 @@ function App() {
       <TopComponent />
       <BrowserRouter>
         <MenuComponent />
-        <DataComponent />
+        {/* <DataComponent /> */}
+        <Routes>
+          <Route path="/DataComponent" element={<DataComponent />} />
+          <Route path="/SearchEqual" element={<SearchEqual />} />
+        </Routes>
       </BrowserRouter>
       <FooterComponet />
     </div>
