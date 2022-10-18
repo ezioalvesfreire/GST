@@ -6,7 +6,9 @@ import FooterComponet from './components/FooterComponent';
 
 import SearchEqual from "./pages/SearchEqual";
 
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/DataComponent" element={<DataComponent />} />
           <Route path="/SearchEqual" element={<SearchEqual />} />
+         {/* <Route path="/SearchEquiv" element={<SearchEquiv />} />*/}
         </Routes>
       </BrowserRouter>
       <FooterComponet />

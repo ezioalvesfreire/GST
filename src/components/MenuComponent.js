@@ -1,8 +1,8 @@
 import React from "react";
 import './MenuComponent.css';
-import SearchEqual from '../pages/SearchEqual';
 
-import { Button, Container } from "reactstrap";
+
+import { Container } from "reactstrap";
 import { Link } from 'react-router-dom';
 
 

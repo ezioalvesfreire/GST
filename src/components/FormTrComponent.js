@@ -73,8 +73,8 @@ const FormTrComponent = () => {
                     <Label for="exampleEmail" size="lg" sm={smLabel}>Channel</Label>
                     <Col sm={smCol}>
                         <Input bsSize="lg" id="exampleEmail" name="email" placeholder="lg" type="select">
-                            <option>N</option>
-                            <option>P</option>
+                            <option>N-CHANNEL</option>
+                            <option>P-CHANNEL</option>
                         </Input>
                     </Col>
                 </FormGroup>
