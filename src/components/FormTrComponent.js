@@ -7,8 +7,8 @@ const smLabel = 3;
 
 let transistor =
 {
-    mosfet:{
-        mosfet1:{
+    mosfet: {
+        mosfet1: {
             description: "FQP12P20",
             package: "TO-220",
             channel: "N",
@@ -16,9 +16,9 @@ let transistor =
             Id: "12,5",
             ptot: "140",
             tj: "150",
-            rds:"0,15"
-          },
-          mosfet2:{
+            rds: "0,15"
+        },
+        mosfet2: {
             description: "FQP19P20",
             package: "TO-220",
             channel: "P",
@@ -26,27 +26,27 @@ let transistor =
             Id: "11,5",
             ptot: "120",
             tj: "150",
-            rds:"0,47"
-          }
+            rds: "0,47"
+        }
 
     },
-    powerTr:{
-        powerTr1:{
+    powerTr: {
+        powerTr1: {
             description: "TIP41C",
             package: "TO-220",
-            channel: "NPN",      
-            Id: "12,5",
-            ptot: "140",
-            tj: "150"          
-          },
-          powerTr2:{
-            description: "TIP42C",
-            package: "TO-220",
-            channel: "PNP",      
+            channel: "NPN",
             Id: "12,5",
             ptot: "140",
             tj: "150"
-          }
+        },
+        powerTr2: {
+            description: "TIP42C",
+            package: "TO-220",
+            channel: "PNP",
+            Id: "12,5",
+            ptot: "140",
+            tj: "150"
+        }
     }
 };
 
