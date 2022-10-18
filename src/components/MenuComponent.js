@@ -1,11 +1,9 @@
 import React from "react";
 import './MenuComponent.css';
-import SearchEqual from '../pages/SearchEqual';
 
-import { Button, Container } from "reactstrap";
+
+import { Container } from "reactstrap";
 import { Link } from 'react-router-dom';
-
-
 
 
 let teste = 10;
@@ -20,10 +18,8 @@ const MenuComponent = () => {
                 <Link to="/DataComponent" className="btn btn-primary ">Comparar</Link>
                 <Link to="/SearchEqual" className="btn btn-primary">Buscar Equiv.</Link>
             </div>
-
-            <div className="Teste bg-primary">dfkgmdgçjdfg</div>
-            <button className=" bg-primary2" type="button">bla-bla-bla</button>
-
+            {/*<div className="Opt Teste bg-primary">dfkgmdgçjdfg</div>
+            <button className="Opt bg-primary2" type="button">bla-bla-bla</button>*/}
         </Container>
     );
 
