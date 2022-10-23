@@ -4,7 +4,7 @@ import TopComponent from './components/TopComponent.js';
 import MenuComponent from './components/MenuComponent.js';
 import FooterComponet from './components/FooterComponent';
 
-import SearchEqual from "./pages/SearchEqual";
+import DataPwrTransistor from "./pages/DataPwrTransistor";
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -19,7 +19,7 @@ function App() {
         {/* <DataComponent /> */}
         <Routes>
           <Route path="/DataFets" element={<DataFets />} />
-          <Route path="/DataPwrTransistors" element={<SearchEqual/>} />
+          <Route path="/DataPwrTransistor" element={<DataPwrTransistor/>} />
          {/* <Route path="/SearchEquiv" element={<SearchEquiv />} />*/}
         </Routes>
       </BrowserRouter>

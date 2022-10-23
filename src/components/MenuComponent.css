@@ -2,13 +2,20 @@
     padding: 55px 17px 0 0;  
        
 }
-
+.Menu h2{
+    padding: 0 0 8px 37px;
+ }
+ 
 .Menu button, .Menu a{
     width: 100%;
     margin: 3px;
 }
+.Menu button, .Menu a.active{
+    background: #00CA00;
+}
 .TR-01, .TR-02{
-    box-shadow: 0 0 11px 6px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 7px 3px rgb(0 0 0 / 32%);
+    background-color: rgb(218, 212, 212);
     border-radius: 5px;
     padding:10px ;
 }
