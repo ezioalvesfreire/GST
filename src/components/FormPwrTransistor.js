@@ -1,5 +1,5 @@
 import React from "react";
-import '../pages/DataFets.css';
+import './FormPwrTransistor.css';
 import { Container, Form, FormGroup, Label, Col, Input } from "reactstrap";
 
 const smCol = 6;
@@ -52,7 +52,7 @@ let transistor =
 
 const t = transistor.mosfet.mosfet2.description;
 
-const FormTrComponent = () => {
+const FormPwrTransistor = () => {
 
     return (
         <div className="TR">
@@ -114,4 +114,4 @@ const FormTrComponent = () => {
     );
 }
 
-export default FormTrComponent;
+export default FormPwrTransistor;
