@@ -1,5 +1,5 @@
 import './App.css';
-import DataComponent from './components/DataComponent';
+import DataFets from './pages/DataFets';
 import TopComponent from './components/TopComponent.js';
 import MenuComponent from './components/MenuComponent.js';
 import FooterComponet from './components/FooterComponent';
@@ -18,8 +18,8 @@ function App() {
         <MenuComponent />
         {/* <DataComponent /> */}
         <Routes>
-          <Route path="/DataComponent" element={<DataComponent />} />
-          <Route path="/SearchEqual" element={<SearchEqual />} />
+          <Route path="/DataFets" element={<DataFets />} />
+          <Route path="/DataPwrTransistors" element={<SearchEqual/>} />
          {/* <Route path="/SearchEquiv" element={<SearchEquiv />} />*/}
         </Routes>
       </BrowserRouter>

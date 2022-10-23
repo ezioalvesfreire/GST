@@ -1,5 +1,5 @@
 import React from "react";
-import './DataComponent.css';
+import '../pages/DataFets.css';
 import { Container, Form, FormGroup, Label, Col, Input } from "reactstrap";
 
 const smCol = 6;
