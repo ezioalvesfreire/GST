@@ -60,13 +60,13 @@ const FormMosfet = () => {
                 <FormGroup row>
                     <Label for="exampleEmail" size="lg" sm={smLabel}>Description</Label>
                     <Col sm={smCol}>
-                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder={t} type="email" />
+                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder={t} type="text" />
                     </Col>
                 </FormGroup>
                 <FormGroup row>
                     <Label for="exampleEmail" size="lg" sm={smLabel}>Package</Label>
                     <Col sm={smCol}>
-                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="TO-220" type="email" />
+                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="TO-220" type="text" />
                     </Col>
                 </FormGroup>
                 <FormGroup row>
@@ -81,32 +81,32 @@ const FormMosfet = () => {
                 <FormGroup row>
                     <Label for="exampleEmail" size="lg" sm={smLabel}>Vds</Label>
                     <Col sm={smCol}>
-                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="200" type="email" />
+                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="200" type="number" />
                     </Col>
                 </FormGroup>
                 <FormGroup row>
                     <Label for="exampleEmail" size="lg" sm={smLabel}>Id</Label>
                     <Col sm={smCol}>
-                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="12,3" type="email" />
+                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="12,3" type="number" />
                     </Col>
                 </FormGroup>
                 <FormGroup row>
                     <Label for="exampleEmail" size="lg" sm={smLabel}>P tot</Label>
                     <Col sm={smCol}>
-                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="140" type="email" />
+                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="140" type="number" />
                     </Col>
                 </FormGroup>
                 <FormGroup row>
                     <Label for="exampleEmail" size="lg" sm={smLabel}>Tj</Label>
                     <Col sm={smCol}>
-                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="150" type="email" />
+                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="150" type="number" />
                     </Col>
                 </FormGroup>
 
                 <FormGroup row>
                     <Label for="exampleEmail" size="lg" sm={smLabel}>Rds/on</Label>
                     <Col sm={smCol}>
-                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="0,15" type="email" />
+                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="0,15" type="number" />
                     </Col>
                 </FormGroup>
             </Form>
