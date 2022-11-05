@@ -3,6 +3,7 @@ import DataFets from './pages/DataFets';
 import TopComponent from './components/TopComponent.js';
 import MenuComponent from './components/MenuComponent.js';
 import FooterComponet from './components/FooterComponent';
+import TesteComponent from './pages/TesteComponent';
 
 import DataPwrTransistor from "./pages/DataPwrTransistor";
 
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/DataFets" element={<DataFets />} />
           <Route path="/DataPwrTransistor" element={<DataPwrTransistor/>} />
+          <Route path="/TesteComponent" element={<TesteComponent/>} />
          {/* <Route path="/SearchEquiv" element={<SearchEquiv />} />*/}
         </Routes>
       </BrowserRouter>
