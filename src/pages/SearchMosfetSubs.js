@@ -2,7 +2,7 @@ import React from "react";
 
 import FormTrComponent from "../components/FormTrComponent";
 
-const SearchEqual = () => {
+const SearchMosfetSubs = () => {
 
     return(
         <div className="">
@@ -15,4 +15,4 @@ const SearchEqual = () => {
     );
 }
 
-export default SearchEqual;
+export default SearchMosfetSubs;

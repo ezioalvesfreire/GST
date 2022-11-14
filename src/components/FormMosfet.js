@@ -5,52 +5,54 @@ import { Container, Form, FormGroup, Label, Col, Input } from "reactstrap";
 const smCol = 6;
 const smLabel = 3;
 
-let transistor =
+let transistors =
 {
-    mosfet: {
+    mosfets: {
         mosfet1: {
+            id_mosfet:1,
             description: "FQP12P20",
             package: "TO-220",
-            channel: "N",
-            vds: "200",
-            Id: "12,5",
-            ptot: "140",
-            tj: "150",
-            rds: "0,15"
+            channel: "N",            
+            drainCurreunt: "12,5",
+            voltageDrainSource: "200",
+            resistanceDraiSource: "0,15"
         },
         mosfet2: {
+            id_mosfet:2,
             description: "FQP19P20",
             package: "TO-220",
-            channel: "P",
-            vds: "200",
-            Id: "11,5",
-            ptot: "120",
-            tj: "150",
-            rds: "0,47"
+            channel: "P",            
+            drainCurreunt: "11,5",
+            voltageDrainSource: "200",
+            resistanceDraiSource: "0,47"
         }
 
     },
-    powerTr: {
-        powerTr1: {
+    powerTransistors: {
+        powerTransistor1: {
+            id_powerTransistor:3,
             description: "TIP41C",
             package: "TO-220",
             channel: "NPN",
-            Id: "12,5",
-            ptot: "140",
-            tj: "150"
+            voltageCollectorEmitter: 100,
+            voltageEmmiterBase: 5, 
+            collectorCurrent:6 
+                      
         },
-        powerTr2: {
+        powerTransistor2: {
+            id_powerTransistor: 4,
             description: "TIP42C",
             package: "TO-220",
             channel: "PNP",
-            Id: "12,5",
-            ptot: "140",
-            tj: "150"
+            voltageCollectorEmitter: 100,
+            voltageEmmiterBase: 5, 
+            collectorCurrent: 6  
+                      
         }
     }
 };
 
-const t = transistor.mosfet.mosfet2.description;
+const t = transistors.mosfets.mosfet2.description;
 
 const FormMosfet = () => {
 
