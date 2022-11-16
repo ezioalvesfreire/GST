@@ -1,6 +1,6 @@
 import React from "react";
 import './FormMosfet.css';
-import { Container, Form, FormGroup, Label, Col, Input } from "reactstrap";
+import { Form, FormGroup, Label, Col, Input } from "reactstrap";
 
 const smCol = 6;
 const smLabel = 3;
