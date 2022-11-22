@@ -54,26 +54,26 @@ let transistors =
 
 const t = transistors.mosfets.mosfet2.description;
 
-const FormMosfet = () => {
+const FormMosfet = ({ idForm }) => {
 
     return (
-        <div className="TR">
+        <div id={idForm} className="TR">
             <FormGroup row>
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Description</Label>
                 <Col sm={smCol}>
-                    <Input bsSize="lg" id="descript" name="descript" placeholder={t} type="text" />
+                    <Input bsSize="lg" id="descript" name={"descript" + idForm} placeholder={t} type="text" />
                 </Col>
             </FormGroup>
             <FormGroup row>
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Package</Label>
                 <Col sm={smCol}>
-                    <Input bsSize="lg" id="pack" name="pack" placeholder="TO-220" type="text" />
+                    <Input bsSize="lg" id="pack" name={"pack" + idForm} placeholder="TO-220" type="text" />
                 </Col>
             </FormGroup>
             <FormGroup row>
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Channel</Label>
                 <Col sm={smCol}>
-                    <Input bsSize="lg" id="ch" name="ch" type="select">
+                    <Input bsSize="lg" id="ch" name={"ch" + idForm} type="select">
                         <option>N-CHANNEL</option>
                         <option>P-CHANNEL</option>
                     </Input>
@@ -82,19 +82,19 @@ const FormMosfet = () => {
             <FormGroup row>
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Id</Label>
                 <Col sm={smCol}>
-                    <Input bsSize="lg" id="drainCurreunt" name="drainCurreunt" placeholder="200" type="number" />
+                    <Input bsSize="lg" id="drainCurreunt" name={"drainCurreunt" + idForm} placeholder="200" type="number" />
                 </Col>
             </FormGroup>
             <FormGroup row>
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Vds</Label>
                 <Col sm={smCol}>
-                    <Input bsSize="lg" id="voltageDrainSource" name="voltageDrainSource" placeholder="12,3" type="number" />
+                    <Input bsSize="lg" id="voltageDrainSource" name={"voltageDrainSource" + idForm} placeholder="12,3" type="number" />
                 </Col>
             </FormGroup>
             <FormGroup row>
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Rds/on</Label>
                 <Col sm={smCol}>
-                    <Input bsSize="lg" id="resistanceDraiSource" name="resistanceDraiSource" placeholder="140" type="number" />
+                    <Input bsSize="lg" id="resistanceDraiSource" name={"resistanceDraiSource"  + idForm} placeholder="140" type="number" />
                 </Col>
             </FormGroup>
         </div>
