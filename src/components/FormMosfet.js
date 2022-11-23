@@ -61,19 +61,19 @@ const FormMosfet = ({ idForm }) => {
             <FormGroup row>
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Description</Label>
                 <Col sm={smCol}>
-                    <Input bsSize="lg" id="descript" name={"descript" + idForm} placeholder={t} type="text" />
+                    <Input bsSize="lg" id="descriptionMosfet" name={"descriptionMosfet_" + idForm} placeholder={t} type="text" />
                 </Col>
             </FormGroup>
             <FormGroup row>
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Package</Label>
                 <Col sm={smCol}>
-                    <Input bsSize="lg" id="pack" name={"pack" + idForm} placeholder="TO-220" type="text" />
+                    <Input bsSize="lg" id="packageMosfet" name={"packageMosfet_" + idForm} placeholder="TO-220" type="text" />
                 </Col>
             </FormGroup>
             <FormGroup row>
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Channel</Label>
                 <Col sm={smCol}>
-                    <Input bsSize="lg" id="ch" name={"ch" + idForm} type="select">
+                    <Input bsSize="lg" id="channelMosfet" name={"channelMosfet_" + idForm} type="select">
                         <option>N-CHANNEL</option>
                         <option>P-CHANNEL</option>
                     </Input>
@@ -82,19 +82,19 @@ const FormMosfet = ({ idForm }) => {
             <FormGroup row>
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Id</Label>
                 <Col sm={smCol}>
-                    <Input bsSize="lg" id="drainCurreunt" name={"drainCurreunt" + idForm} placeholder="200" type="number" />
+                    <Input bsSize="lg" id="drainCurreunt" name={"drainCurrent_" + idForm} placeholder="200" type="number" />
                 </Col>
             </FormGroup>
             <FormGroup row>
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Vds</Label>
                 <Col sm={smCol}>
-                    <Input bsSize="lg" id="voltageDrainSource" name={"voltageDrainSource" + idForm} placeholder="12,3" type="number" />
+                    <Input bsSize="lg" id="voltageDrainSource" name={"voltageDrainSource_" + idForm} placeholder="12,3" type="number" />
                 </Col>
             </FormGroup>
             <FormGroup row>
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Rds/on</Label>
                 <Col sm={smCol}>
-                    <Input bsSize="lg" id="resistanceDraiSource" name={"resistanceDraiSource"  + idForm} placeholder="140" type="number" />
+                    <Input bsSize="lg" id="resistanceDraiSource" name={"resistanceDraiSource_"  + idForm} placeholder="140" type="number" />
                 </Col>
             </FormGroup>
         </div>
