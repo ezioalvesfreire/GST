@@ -12,19 +12,20 @@ const DataFets = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        console.clear()
 
-        const formData = new FormData(e.target)
-        const data = Object.fromEntries(formData)
+        const formDataMosfet = new FormData(e.target)
+        const dataMosfet = Object.fromEntries(formDataMosfet)
 
-        console.log("TODOS OS DADOS DO FORM 1", data)
+        console.log("TODOS OS DADOS DO FORM 1", dataMosfet)
 
 
-        const addMosfet = data = axios.post("http://localhost:5000/mosfets", data)
-            .then(() => {
-
-                console.log("Sucesso", addMosfet)
-            }).catch(() => {
-                console.log("Erro", addMosfet)
+        const addMosfet = dataMosfet = axios.post("http://localhost:5000/mosfets", dataMosfet)
+            .then(function (response) {
+                console.log("Sucesso", response)
+            })
+            .catch(function (response) {
+                console.log("Erro", response)
             })
     }
 
