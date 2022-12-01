@@ -3,6 +3,21 @@ input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
 input[type="number"] {
     -moz-appearance: textfield;
+}
+
+.TR .escale_impedance_col {
+    padding: 8px 0;
+    margin: 0px 0 0;
+}
+
+.TR .escale_impedance_col input {
+    cursor: pointer;
+}
+
+.TR .escale_impedance_col label {
+    margin: 0 10px 0 4px;
+    cursor: pointer;
 }

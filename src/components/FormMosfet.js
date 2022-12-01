@@ -2,7 +2,8 @@ import React from "react";
 import './FormMosfet.css';
 import { Form, FormGroup, Label, Col, Input } from "reactstrap";
 
-const smCol = 6;
+const smCol_2 = 3;
+const smCol = 5;
 const smLabel = 3;
 
 let transistors =
@@ -74,6 +75,7 @@ const FormMosfet = ({ idForm }) => {
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Channel</Label>
                 <Col sm={smCol}>
                     <Input bsSize="lg" id="channelMosfet" name={"channelMosfet_" + idForm} type="select">
+                        <option>SELECIONE</option>
                         <option>N-CHANNEL</option>
                         <option>P-CHANNEL</option>
                     </Input>
@@ -94,7 +96,13 @@ const FormMosfet = ({ idForm }) => {
             <FormGroup row>
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Rds/on</Label>
                 <Col sm={smCol}>
-                    <Input bsSize="lg" id="resistanceDraiSource" name={"resistanceDraiSource_"  + idForm} placeholder="140" type="number" />
+                    <Input bsSize="lg" id="resistanceDraiSource" name={"resistanceDraiSource_" + idForm} placeholder="140" type="number" />
+                </Col>
+                <Col className="escale_impedance_col" sm={smCol_2}>
+                    <Input id={"impedance1_" + idForm} name={"greatnessResistanceDraiSource_" + idForm} type="radio" value={'mOhms'} />
+                    <Label for={"impedance1_" + idForm}>m&Omega;</Label>
+                    <Input id={"impedance2_" + idForm} name={"greatnessResistanceDraiSource_" + idForm} type="radio" value={'Ohms'} />
+                    <Label for={"impedance2_" + idForm}>&Omega;</Label>
                 </Col>
             </FormGroup>
         </div>
