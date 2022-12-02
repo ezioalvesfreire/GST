@@ -4,7 +4,7 @@ import axios from "axios";
 import FormMosfet from "../components/FormMosfet";
 import { Button, Container, Form, Input } from "reactstrap";
 import NavComponent from "../components/NavComponent";
-import { Check, RefreshCcw } from "react-feather";
+import { Check, RefreshCcw, Info } from "react-feather";
 
 
 
@@ -41,13 +41,23 @@ const DataFets = () => {
                 <Form onSubmit={handleSubmit}>
                     <div className="frmComparator box-sidebar">
                         <div className="TR-01 py-2  px-3">
+                            <div className="infoForm"
+                             title="Informe nos campos de MOSFET-01
+                                    os valores do mosfet original do equipamento">
+                                <Info size={30} />
+                            </div>
                             <div id='Form1' class="col-12 ">
-                                <p></p>
                                 <h2>MOSFET-01</h2>
                                 <FormMosfet idForm="1" />
                             </div>
                         </div>
                         <div className="TR-02 py-2  px-3">
+                            <div className="infoForm"
+                                 title="Informe nos campos de MOSFET-02
+                                        os valores do mosfet que você acredite
+                                        que seja equivalente" >
+                                <Info size={30} />
+                            </div>
                             <div id='Form2' class="col-12">
                                 <h2>MOSFET-02</h2>
                                 <FormMosfet idForm="2" />
