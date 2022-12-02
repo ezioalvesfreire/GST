@@ -69,7 +69,7 @@ const FormMosfet = ({ idForm }) => {
             <FormGroup row>
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Package</Label>
                 <Col sm={smCol}>
-                    <Input bsSize="lg" id="packageMosfet" name={"packageMosfet_" + idForm} placeholder="TO-220" type="text" />
+                    <Input bsSize="lg" id="packageMosfet" name={"packageMosfet_" + idForm} placeholder="TO220" type="text" />
                 </Col>
             </FormGroup>
             <FormGroup row>

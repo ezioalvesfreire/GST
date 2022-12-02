@@ -13,7 +13,24 @@
     padding: 50px;
 
 }
-.infoForm{
+.infoFormMosfet{
  float: right;
  margin: 0 0 0 ;
+}
+.frmComparator .sucess {
+    background-color: rgb(143 239 149 / 49%);
+    border: solid 1px green;
+}
+.frmComparator .msn{
+    margin: 20px 0 15px;
+}
+.frmComparator .sucess .msn{
+    color: green;
+}
+.frmComparator .erro {
+    /*background-color: rgb(249 202 202 / 86%);*/
+    border: solid 1px red;
+}
+.frmComparator .erro .msn{
+    color: red;
 }
