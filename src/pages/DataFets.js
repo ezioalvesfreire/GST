@@ -15,9 +15,15 @@ const DataFets = () => {
         console.clear()
 
         let formMosfet = e.target;
+        const mosfetForm2 = document.getElementById('mosfetForm2', formMosfet)
 
-        document.getElementById('mosfetForm2', formMosfet).classList.remove('erro')
-        document.getElementById('mosfetForm2', formMosfet).classList.remove('sucess')
+        document.getElementById('mosfetForm2').classList.remove('erro')
+        document.getElementById('mosfetForm2').classList.remove('sucess')
+        document.getElementById('channelMosfet_2', formMosfet).classList.remove('erro')
+        document.getElementById('resistanceDraiSource_2', formMosfet).classList.remove('erro')
+        document.getElementById('drainCurrent_2', formMosfet).classList.remove('erro')
+        document.getElementById('voltageDrainSource_2', formMosfet).classList.remove('erro')
+    
 
         const formDataMosfet = new FormData(formMosfet)
         const dataMosfet = Object.fromEntries(formDataMosfet)
@@ -28,26 +34,38 @@ const DataFets = () => {
         const addMosfet = dataMosfet = axios.post("http://localhost:5000/mosfets", dataMosfet)
             .then(function (response) {
                 console.log("Sucesso", response)
-                const msgMosf1WasInseted = response.data.msgMosf1WasInseted 
-                const msgMosf2WasInseted = response.data.msgMosf2WasInseted 
-                const isChannelCompatible = response.data.checkChannel.checkChannelMosfet_2 
-                const responseChannelCompatible = response.data.checkChannel.msgMosfet_2_compatible 
-                const calculateEletricalPower = response.data.calculate_eletrical_power.calculateEletricalPower 
-                const checkResistanceDrainSource = response.data.check_resistance_drainSource.checkResistanceDrainSource 
+                const msgMosf1WasInseted = response.data.msgMosf1WasInseted
+                const msgMosf2WasInseted = response.data.msgMosf2WasInseted
+                const isChannelCompatible = response.data.checkChannel.checkChannelMosfet_2
+                const responseChannelCompatible = response.data.checkChannel.msgMosfet_2_compatible
+                const calculateEletricalPower = response.data.calculate_eletrical_power.calculateEletricalPower
+                const checkResistanceDrainSource = response.data.check_resistance_drainSource.checkResistanceDrainSource
 
 
 
                 //document.getElementById('msn', formMosfet).innerText = responseChannelCompatible
 
                 if (!isChannelCompatible || !calculateEletricalPower || !checkResistanceDrainSource) {
-                    document.getElementById('mosfetForm2', formMosfet).classList.add('erro')
+                    mosfetForm2.classList.add('erro')
                 } else {
-                    document.getElementById('mosfetForm2', formMosfet).classList.add('sucess')
+                    mosfetForm2.classList.add('sucess')
                 }
+
+                if (!isChannelCompatible) {
+                    document.getElementById('channelMosfet_2').classList.add('erro')
+                }
+                if (!checkResistanceDrainSource) {
+                    document.getElementById('resistanceDraiSource_2').classList.add('erro')
+                }
+                if (!calculateEletricalPower) {
+                    document.getElementById('drainCurrent_2').classList.add('erro')
+                    document.getElementById('voltageDrainSource_2').classList.add('erro')
+                }
+
             })
             .catch(function (response) {
                 console.log("Erro", response)
-                document.getElementById('mosfetForm2', formMosfet).classList.add('erro')
+                mosfetForm2.classList.add('erro')
             })
     }
 
@@ -64,7 +82,7 @@ const DataFets = () => {
                     <div className="frmComparator box-sidebar">
                         <div id='mosfetForm1' className="TR-01 py-2  px-3">
                             <div className="infoFormMosfet"
-                             title="Informe nos campos de MOSFET-01
+                                title="Informe nos campos de MOSFET-01
                                     os valores do mosfet original do equipamento">
                                 <Info size={30} />
                             </div>

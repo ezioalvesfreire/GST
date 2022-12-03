@@ -34,3 +34,6 @@
 .frmComparator .erro .msn{
     color: red;
 }
+.frmComparator input.erro {
+    border: solid 1px red;
+}
