@@ -60,53 +60,47 @@ const FormPwrTransistor = () => {
                 <FormGroup row>
                     <Label for="exampleEmail" size="lg" sm={smLabel}>Description</Label>
                     <Col sm={smCol}>
-                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder={t} type="email" />
+                        <Input bsSize="lg" id="descriptionPwrTransistor" name={"descriptionPwrTransistor_"} placeholder="BD139" type="text" />
                     </Col>
                 </FormGroup>
                 <FormGroup row>
                     <Label for="exampleEmail" size="lg" sm={smLabel}>Package</Label>
                     <Col sm={smCol}>
-                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="TO-220" type="email" />
+                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="TO126" type="text" />
                     </Col>
                 </FormGroup>
                 <FormGroup row>
                     <Label for="exampleEmail" size="lg" sm={smLabel}>Channel</Label>
                     <Col sm={smCol}>
                         <Input bsSize="lg" id="exampleEmail" name="email" placeholder="lg" type="select">
-                            <option>N-CHANNEL</option>
-                            <option>P-CHANNEL</option>
+                            <option>SELECIONE</option>
+                            <option>NPN</option>
+                            <option>PNP</option>
                         </Input>
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Label for="exampleEmail" size="lg" sm={smLabel}>Vds</Label>
+                    <Label for="exampleEmail" size="lg" sm={smLabel}>Vcbo</Label>
                     <Col sm={smCol}>
-                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="200" type="email" />
+                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="100" type="float" />
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Label for="exampleEmail" size="lg" sm={smLabel}>Id</Label>
+                    <Label for="exampleEmail" size="lg" sm={smLabel}>Vceo</Label>
                     <Col sm={smCol}>
-                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="12,3" type="email" />
+                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="100" type="float" />
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Label for="exampleEmail" size="lg" sm={smLabel}>P tot</Label>
+                    <Label for="exampleEmail" size="lg" sm={smLabel}>Vebo</Label>
                     <Col sm={smCol}>
-                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="140" type="email" />
+                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="5" type="float" />
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Label for="exampleEmail" size="lg" sm={smLabel}>Tj</Label>
+                    <Label for="exampleEmail" size="lg" sm={smLabel}>Ic</Label>
                     <Col sm={smCol}>
-                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="150" type="email" />
-                    </Col>
-                </FormGroup>
-
-                <FormGroup row>
-                    <Label for="exampleEmail" size="lg" sm={smLabel}>Rds/on</Label>
-                    <Col sm={smCol}>
-                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="0,15" type="email" />
+                        <Input bsSize="lg" id="exampleEmail" name="email" placeholder="1.5" type="float" />
                     </Col>
                 </FormGroup>
             </Form>

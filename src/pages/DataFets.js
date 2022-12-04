@@ -66,6 +66,7 @@ const DataFets = () => {
             .catch(function (response) {
                 console.log("Erro", response)
                 mosfetForm2.classList.add('erro')
+                document.getElementById('msn', formMosfet).innerText = "Erro 404 - Servidor não encontrado!!!"
             })
     }
 

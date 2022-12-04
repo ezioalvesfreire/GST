@@ -16,7 +16,7 @@ const MenuComponent = () => {
             <div className="d-grid gap-1.5 col-9 mx-auto">
                 <NavLink to="/DataFets" className="btn btn-success " onclick="myFunction()">Mosfets</NavLink>
                 <NavLink to="/DataPwrTransistor" className="btn btn-success ">Power Transistor</NavLink>
-                <NavLink to="/TesteComponent" className="btn btn-success ">testeConnectAPi</NavLink>
+                { /*<NavLink to="/TesteComponent" className="btn btn-success ">testeConnectAPi</NavLink> */}
 
             </div>
             {/*<div className="Opt Teste bg-primary">dfkgmdgçjdfg</div>
