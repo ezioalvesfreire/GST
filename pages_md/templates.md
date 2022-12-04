@@ -39,4 +39,11 @@ datasheet_buk456
 <img src="./images_md/nao_equivalente.png" alt="página principal" width="1000">
 Neste exemplo esbarrou na restrição, RDS/on.
 
+
+## justificando o porque de não ser compatível e ter esbarrado apenas no RDS/on
+
+Antes de qualquer coisa é preciso saber como é feito o cálculo de potência
+
+
+
 << [HOME](/README.md)

@@ -38,7 +38,7 @@ se o formulário ficar verde é porque o transistor pode ser substituido pelo ou
 
 se a aplicação encontrar algum transistor equivalente em sua base de dados, o mesmo será recomendado.
 
-[Veja Mockups de tela interface GST](/pages_md/templates.md)
+[Testando API via interface GST](/pages_md/templates.md)
 
 
 ## Ferramentas e tecnologias utilizadas no desenvolvimento da UI(User interface) interface com usuário, denominada GST(Guia de Substituição de Transistores) - Front-End

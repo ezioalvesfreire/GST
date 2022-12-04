@@ -59,23 +59,23 @@ const t = transistors.mosfets.mosfet2.description;
 const FormMosfet = ({ idForm }) => {
 
     return (
-        <div id={idForm} className="TR">
+        <div id={idForm} className="TR">            
             <FormGroup row>
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Description</Label>
                 <Col sm={smCol}>
-                    <Input bsSize="lg" id="descriptionMosfet" name={"descriptionMosfet_" + idForm} placeholder={t} type="text" />
+                    <Input bsSize="lg" id="descriptionMosfet" name={"descriptionMosfet"} placeholder={t} type="text" />
                 </Col>
             </FormGroup>
             <FormGroup row>
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Package</Label>
                 <Col sm={smCol}>
-                    <Input bsSize="lg" id="packageMosfet" name={"packageMosfet_" + idForm} placeholder="TO220" type="text" />
+                    <Input bsSize="lg" id="packageMosfet" name={"packageMosfet"} placeholder="TO220" type="text" />
                 </Col>
             </FormGroup>
             <FormGroup row>
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Channel</Label>
                 <Col sm={smCol}>
-                    <Input bsSize="lg" id={"channelMosfet_" + idForm} name={"channelMosfet_" + idForm} type="select">
+                    <Input bsSize="lg" id={"channelMosfet_" + idForm} name={"channelMosfet"} type="select">
                         <option>SELECIONE</option>
                         <option>N-CHANNEL</option>
                         <option>P-CHANNEL</option>
@@ -85,24 +85,24 @@ const FormMosfet = ({ idForm }) => {
             <FormGroup row>
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Id</Label>
                 <Col sm={smCol}>
-                    <Input bsSize="lg" id={"drainCurrent_" + idForm} name={"drainCurrent_" + idForm} placeholder="200" type="float" />
+                    <Input bsSize="lg" id={"drainCurrent_" + idForm} name={"drainCurrent"} placeholder="200" type="float" />
                 </Col>
             </FormGroup>
             <FormGroup row>
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Vds</Label>
                 <Col sm={smCol}>
-                    <Input bsSize="lg" id={"voltageDrainSource_" + idForm} name={"voltageDrainSource_" + idForm} placeholder="12,3" type="float" />
+                    <Input bsSize="lg" id={"voltageDrainSource_" + idForm} name={"voltageDrainSource"} placeholder="12,3" type="float" />
                 </Col>
             </FormGroup>
             <FormGroup row>
                 <Label for="exampleEmail" size="lg" sm={smLabel}>Rds/on</Label>
                 <Col sm={smCol}>
-                    <Input bsSize="lg" id={"resistanceDraiSource_" + idForm} name={"resistanceDraiSource_" + idForm} placeholder="140" type="float" />
+                    <Input bsSize="lg" id={"resistanceDraiSource_" + idForm} name={"resistanceDraiSource"} placeholder="140" type="float" />
                 </Col>
                 <Col className="escale_impedance_col" sm={smCol_2}>
-                    <Input id={"impedance1_" + idForm} name={"greatnessResistanceDraiSource_" + idForm} type="radio" value={'mOhms'} />
+                    <Input id={"impedance1_" + idForm} name={"greatnessResistanceDraiSource"} type="radio" value={'mOhms'} />
                     <Label for={"impedance1_" + idForm}>m&Omega;</Label>
-                    <Input id={"impedance2_" + idForm} name={"greatnessResistanceDraiSource_" + idForm} type="radio" value={'Ohms'} />
+                    <Input id={"impedance2_" + idForm} name={"greatnessResistanceDraiSource"} type="radio" value={'Ohms'} />
                     <Label for={"impedance2_" + idForm}>&Omega;</Label>
                 </Col>
             </FormGroup>
