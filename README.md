@@ -10,6 +10,7 @@ Indiscutivelmente a invenção mais importante do século passado, o transistor 
 
 Existem variados tipos de transistores, mas o que alcançou maior sucesso foi o transistor BJT(transistor de Junção Bipolar), desenvolvido por William Shockley, da Bell Labs, transistor foi uma invenção que acabou rendendo o prêmio Nobel aos seus criadores.
  
+ Transistores podem aparecer em diversas formas "packages" e tamanhos, podem atuar como um interruptor ou amplificador de sinal.
 
 [Link - Veja como é formada a estrutura de um transistor e como funciona](pages_md/estrutura_trasistor.md)
 
@@ -27,7 +28,7 @@ O GST (Guia de substituição de transistor ) é uma aplicação que pode ser ut
 3 - preencha todos os dados corretamente conforme o datasheet do transistor nos formulários 01 e 02
 4 - clique no botão comparar que atualmente está como buscar/comparar
 
-se o formulário ficar verde é porque o transistor pode ser substituido pelo outro, se ficar vermelho não é romendado 
+se o formulário ficar verde é porque o transistor pode ser substituido pelo outro, se ficar vermelho não é recomendado 
 
 ### Modo Buscar
 
@@ -56,5 +57,25 @@ para mais detalhes se saber qual finalidade de cada ferramenta e e tecnologia ut
 [FERRAMENTAS E TECNOLOGIAS](pages_md/ferramentas_e_tecnologias.md)
 
 
-## Guia rápido de como baixar ou clonar esta aplicação instalar as ferramentas e testar em seu computador. 
+## Guia rápido de como baixar ou clonar instalar as ferramentas e testar esta aplicação em seu computador. 
+
+[Link - Guia de instalação](pages_md/guia_md.md)
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
 
