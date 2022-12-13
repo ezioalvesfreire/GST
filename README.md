@@ -56,8 +56,10 @@ para mais detalhes se saber qual finalidade de cada ferramenta e e tecnologia ut
 
 [FERRAMENTAS E TECNOLOGIAS](pages_md/ferramentas_e_tecnologias.md)
 
+## Preparação do ambiente para rodar a aplicação.
+[Link - Preparação do ambiente](preparacao_ambiente.md)
 
-## Guia rápido de como baixar ou clonar instalar as ferramentas e testar esta aplicação em seu computador. 
+## Guia rápido de como baixar ou clonar e rodar a aplicação. 
 
 [Link - Guia de instalação](pages_md/guia_md.md)
 
