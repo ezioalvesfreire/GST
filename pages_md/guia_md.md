@@ -7,18 +7,17 @@
 
 2 - Copie a URL da aplicação no GitHub conforme ilustra a imagem a seguir, caso tenha feito o fork, o link será referente ao projeto, porém da sua conta git hub.
 <img src="images_md/url_github_gst-2.png" alt="Download_VS_Code" width="1000">
-
 Caso tenha instalado o Git em sua máquina, pode-se usar o GitBash para clonar a aplicação GST
 para isso entre na pasta que foi criada e clique com o botão auxiliar do mouse, será aberta uma janela, clique em Git Bash Here, conforme ilustra a imagem abaixo. 
 
-<img src="images_md/atalho_git_bash.png" alt="Download_VS_Code" width="1000">
+<img src="images_md/atalho_git_bash-2.png" alt="Download_VS_Code" width="1000">
 
 Será aberto um terminal Bash, conforme ilustra imagem abaixo.
-<img src="images_md/terminal_git_bash.png" alt="Download_VS_Code" width="1000">
+<img src="images_md/terminal_git_bash-2.png" alt="Download_VS_Code" width="1000">
 
 
 após ter copiado o link da URL do projeto e aberto o terminal, dê o comado git clone e cole a URL do projeto clicando com botão auxiliar do mouse e clicando em paste
-<img src="images_md/clone_terminal_git_bash.png" alt="Download_VS_Code" width="1000">
+<img src="images_md/clone_terminal_git_bash-2.png" alt="Download_VS_Code" width="1000">
 
 
 Veja na imagem abaixo como ficou o comando git clone  + URL da aplicação
