@@ -6,7 +6,7 @@ import { Form, FormGroup, Label, Col, Input } from "reactstrap";
 
 const smCol = 6;
 const smLabel = 3;
-//const uri = 'http://localhost:5000/mosfets';
+const uri = 'http://localhost:5000/mosfets';
 
 const handleSubmit = async (e) => {
     e.preventDefault();
@@ -15,7 +15,7 @@ const handleSubmit = async (e) => {
     console.log("TODOS OS DADOS DOS FORMS TR-1 e TR-02", data)
     //await React.get("http://localhost:5000/mosfets", data)
 
-    const addPost = data = axios.post("http://localhost:5000/mosfets", data)
+    const addPost = data = axios.post(uri, data)
         .then(() => {
 
             console.log("Sucesso", addPost)
@@ -26,7 +26,7 @@ const handleSubmit = async (e) => {
 
 async function getContent() {
     try {
-        const response = await fetch('http://localhost:5000/mosfets')
+        const response = await fetch(uri)
         //console.log(response)
         const data = await response.json()
         //console.log(data)
@@ -40,7 +40,7 @@ getContent()
 
 async function postContent() {
     try {
-        const response = await fetch('http://localhost:5000/mosfets')
+        const response = await fetch(uri)
         //console.log(response)
         const data = await response.json()
         //console.log(data)
@@ -63,8 +63,6 @@ function show(users) {
     //document.getElementById('TesteConnectAPI').innerHTML = output
 }
 
-
-//const t = transistor.mosfet.mosfet2.description;
 
 function TesteComponent() {
     const [id_mosfet, setId_mosfet] = useState('')
