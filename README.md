@@ -22,6 +22,8 @@ O GST (Guia de substituição de transistor ) é uma aplicação que pode ser ut
 ## Como é dada a equivalência ou substituição de um transistor
 Para se obter um transistor equivalente ou substituto, não necessariamente é preciso ter os mesmos valores, é preciso apenas estar dentro do campo de correspondências, e obedecer outras restrições importantíssimas.
 
+[Link - Como funciona a correspondencia de um transistor ](pages_md/correspondencias.md)
+
 
 ## Como funciona a inteface com usuário
 
