@@ -19,6 +19,10 @@ Existem variados tipos de transistores, mas o que alcançou maior sucesso foi o 
 
 O GST (Guia de substituição de transistor ) é uma aplicação que pode ser utilizada em dois modos diferentes, utilizando o modo comparar, após ter preenchido os dados referente ao transistor conforme seu datasheet a aplicação será capaz de dizer se o transistor é equivalente ou não,  no modo buscar após o usuário ter preenchido todos os dados do transistor corretamente a aplicação poderá encontrar em sua base de dados e recomendar nenhum, um ou vários transistores equivalentes.
 
+## Como é dada a equivalência ou substituição de um transistor
+Para se obter um transistor equivalente ou substituto, não necessariamente é preciso ter os mesmos valores, é preciso apenas estar dentro do campo de correspondências, e obedecer outras restrições importantíssimas.
+
+
 ## Como funciona a inteface com usuário
 
 ### Modo Comparar
